@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvHosgeldin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hoşgeldin,\nOyuncu 👋"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/btnSansli"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_background"
+            android:src="@android:drawable/ic_menu_help"
+            app:tint="#FFD700"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageButton
+            android:id="@+id/btnProfil"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_background"
+            android:src="@android:drawable/ic_menu_myplaces"
+            app:tint="#FFFFFF"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/rounded_background"
+        app:iconifiedByDefault="false"
+        app:queryHint="Oyun Ara..."
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"/>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollFiltre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbars="none"
+        android:paddingStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/searchView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btnFiltreTumu" android:text="Tümü" android:layout_width="wrap_content" android:layout_height="40dp" android:backgroundTint="#00BFFF" android:layout_marginEnd="8dp"/>
+
+            <Button android:id="@+id/btnFiltreBenim" android:text="Benimkiler" android:layout_width="wrap_content" android:layout_height="40dp" android:backgroundTint="#333333" android:textColor="#CCCCCC" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btnFiltreIstek" android:text="İstek" android:layout_width="wrap_content" android:layout_height="40dp" android:backgroundTint="#333333" android:textColor="#CCCCCC" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btnFiltreBitirdim" android:text="Bitirdim" android:layout_width="wrap_content" android:layout_height="40dp" android:backgroundTint="#333333" android:textColor="#CCCCCC"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOyunlar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/scrollFiltre"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:src="@android:drawable/ic_input_add"
+        app:tint="#FFFFFF"
+        app:backgroundTint="#00BFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

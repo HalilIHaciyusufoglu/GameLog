@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#222222">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Düzenle &amp; Puanla"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durum:"
+        android:textColor="#BBBBBB"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spDuzenleDurum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#333333"
+        android:popupBackground="#333333"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puan Ver:"
+        android:textColor="#BBBBBB"
+        android:layout_marginBottom="8dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingDuzenle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:progressTint="#FFD700"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnGuncelle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="GÜNCELLE"
+        android:backgroundTint="#00BFFF"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+</LinearLayout>

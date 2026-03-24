@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:fitsSystemWindows="true"> <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Yeni Oyun Ekle"
+    android:textColor="#FFFFFF"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oyun Adı"
+        android:textColor="#BBBBBB"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etOyunAdi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2C2C2C"
+        android:textColor="#FFFFFF"
+        android:paddingStart="16dp"
+        android:hint="Örn: The Witcher 3"
+        android:textColorHint="#666666"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Platform"
+        android:textColor="#BBBBBB"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spPlatform"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2C2C2C"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durum"
+        android:textColor="#BBBBBB"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spDurum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2C2C2C"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puanın"
+        android:textColor="#BBBBBB"
+        android:layout_marginBottom="8dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:theme="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:progressTint="#FFD700"
+        android:secondaryProgressTint="#444444"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnKaydet"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="KAYDET"
+        android:backgroundTint="#00BFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oyunun Konusu / Hikayesi"
+        android:textColor="#BBBBBB"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etHikaye"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#2C2C2C"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:hint="Oyunun hikayesini kısaca buraya yaz..."
+        android:textColorHint="#666666"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAMELOG"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/etKullaniciNick"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2C2C2C"
+        android:hint="Kullanıcı Adı (Sadece Kayıt İçin)"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etKullaniciAdi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2C2C2C"
+        android:hint="E-posta Adresi"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etSifre"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2C2C2C"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:paddingStart="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvSifreUnuttum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifremi Unuttum?"
+        android:textColor="#BBBBBB"
+        android:layout_gravity="end"
+        android:layout_marginBottom="30dp"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/btnGiris"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="GİRİŞ YAP"
+        android:backgroundTint="#00BFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnKayit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="HESAP OLUŞTUR"
+        android:backgroundTint="#333333"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+</LinearLayout>

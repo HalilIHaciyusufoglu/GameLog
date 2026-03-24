@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "283856048634",
+    "project_id": "gamelog-1b46d",
+    "storage_bucket": "gamelog-1b46d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283856048634:android:e1139b4f87bdb18f75d443",
+        "android_client_info": {
+          "package_name": "com.example.gamelog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQa-vhmGaeRSTws9eoPbN3ikz8YTResb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
